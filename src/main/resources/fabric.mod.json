@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "lyricsoverlay",
+	"version": "${version}",
+	"name": "Lyrics Overlay",
+	"description": "Shows synced lyrics for whatever song is playing on your PC (Spotify, YouTube, Apple Music...) plus a customizable now-playing card. Client-side only.",
+	"authors": ["You"],
+	"license": "CC0-1.0",
+	"icon": "assets/lyricsoverlay/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.lyricsoverlay.LyricsOverlayClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.17.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
