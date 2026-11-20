@@ -1,0 +1,19 @@
+name: TrollAdmin
+version: '${project.version}'
+main: dev.trolladmin.TrollPlugin
+api-version: '1.21.11'
+description: Admin troll toolkit - cut reach, shrink, freeze, fake bans and more.
+
+commands:
+  troll:
+    description: Troll a player. /troll <player> opens the menu.
+    usage: /troll <player> [effect] [value|off]
+    permission: trolladmin.use
+
+permissions:
+  trolladmin.use:
+    description: Use /troll
+    default: op
+  trolladmin.exempt:
+    description: Cannot be trolled
+    default: false
